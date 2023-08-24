@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="number"] {
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  margin-right: 20px;
+}
+
+p {
+  margin-top: 0;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.bingo-card {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  margin-top: 20px;
+  width: 250px;
+  border: 1px solid #007BFF;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bingo-cell {
+  background-color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.bingo-cell.center-cell {
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bingo-cell.center-cell::before {
+  content: "FREE";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.marked-number {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* space between cards */
+  justify-content: center; /* centering the cards if there's extra space */
+}
+
+.winning-card {
+  border: 3px solid green;
+}

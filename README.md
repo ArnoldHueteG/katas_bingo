@@ -2,6 +2,8 @@
 
 Welcome to the Bingo Web Application! This application leverages the power of Node.js for its backend services and React for a responsive frontend experience.
 
+The application was based on this [requirements](https://tddbuddy.com/katas/bingo.html)
+
 ## Prerequisites:
 
 Ensure that you have the following installed:
